@@ -12,7 +12,8 @@ import { environment } from '../environments/environment';
 export class App {
   protected title = 'Paypal-Angular';
   public payPalConfig?: IPayPalConfig;
-  private apiUrl = environment.apiUrl;
+  private readonly apiUrl = environment.apiUrl;
+  private readonly clientId = environment.clientId;
   ngOnInit(): void {
     this.initConfig();
   }
@@ -29,8 +30,7 @@ export class App {
         layout: 'horizontal',
         label: 'buynow',
       },
-      clientId:
-        'AQL58I-tY_37kvBrNrtkHI5EuYnZkc20YTQzgh1E6nuvSTiguzKolMKU5_--AQU0x4bErT5L8bIs1Dj7',
+      clientId: this.clientId,
 
       createOrderOnServer: (data) =>
         fetch(this.apiUrl + '/CreatePayment', {
