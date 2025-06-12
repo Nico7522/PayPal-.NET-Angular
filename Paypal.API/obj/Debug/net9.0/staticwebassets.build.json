@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "lk8oEhgjcF+9Z7DVw/V1uxnDepQo61Wtd4lTS+WyjA4=",
+  "Source": "Paypal.API",
+  "BasePath": "_content/Paypal.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

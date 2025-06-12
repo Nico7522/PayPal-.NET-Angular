@@ -1,0 +1,22 @@
+<div class="article">
+
+  <img
+    src="https://images.caradisiac.com/logos/1/4/2/9/281429/S0-le-prix-du-ford-mustang-mach-e-electrique-baisse-mais-cela-suffira-t-il-207226.jpg"
+    alt="">
+
+  <div class="description">
+    <h3>62.150 €</h3>
+    <input #quantity (change)="setQuantity(+quantity.value)" type="number">
+    <p>L'icône. Tout électrique. La Mustang Mach‑E® se démarque par ses performances entièrement électriques. Autonomie
+      jusqu'à 600 kilomètres3 et accès à plus de 800 000 bornes de recharge à travers l'Europe. SUV électrique Ford
+      Mustang Mach-E®: démarquez-vous.</p>
+  </div>
+
+  <div class="payment-button">
+    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+
+  </div>
+</div>
+
+
+<router-outlet />
